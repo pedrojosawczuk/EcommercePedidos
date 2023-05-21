@@ -30,6 +30,12 @@ clone o repositório para a sua máquina
 git clone https://github.com/pedrojosawczuk/EcommercePedidos.git
 ```
 
+```
+docker-compose up
+```
+
+Em outro terminal 
+
 Entre na pasta com o repositório local
 
 ```

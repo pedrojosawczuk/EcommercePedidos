@@ -2,9 +2,10 @@ namespace EcommercePedidos.Models;
 
 public class ItemPedidoModel
 {
-    public int ItemPedidoID { get; set; }
-    private string? Produto { get; set; }
-    private int Quantidade { get; set; }
-    private decimal PrecoUnitario { get; set; }
-    private PedidoModel? Pedido { get; set; }
+    public long ItemPedidoID { get; set; }
+    public string? Produto { get; set; }
+    public int Quantidade { get; set; }
+    public decimal PrecoUnitario { get; set; }
+    public long PedidoID { get; set; }
+    public PedidoModel? Pedido { get; set; }
 }
