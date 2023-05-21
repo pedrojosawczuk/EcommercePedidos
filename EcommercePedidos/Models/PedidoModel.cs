@@ -1,8 +1,9 @@
 namespace EcommercePedidos.Models;
-public class Pedido
+public class PedidoModel
 {
-    public int PedidoID { get; set; }
-    private DateTime _dataPedido { get; set; }
-    private string? _cliente { get; set; }
-    private string? _status { get; set; }
+    public long PedidoID { get; set; }
+    public List<ItemPedidoModel>? ItensPedido { get; set; }
+    private DateTime DataPedido { get; set; }
+    private string? Cliente { get; set; }
+    private string? Status { get; set; }
 }
