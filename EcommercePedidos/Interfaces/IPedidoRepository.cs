@@ -4,9 +4,9 @@ namespace EcommercePedidos.Interfaces;
 
 public interface IPedidoRepository
 {
-    void Inserir(Pedido pedido);
-    void Atualizar(Pedido pedido);
-    void Excluir(int id);
-    Pedido ObterPorId(int id);
-    List<Pedido> ObterTodos();
+    void InserirPedido(PedidoModel pedido);
+    void AtualizarPedido(PedidoModel pedido);
+    PedidoModel? ObterPedidoPorId(long id);
+    IEnumerable<PedidoModel> ObterTodosOsPedidos();
+    void ExcluirPedido(long id);
 }
